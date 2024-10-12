@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to FastBite</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Your Favorite Food Delivered Fast!</h2>
+        <p>Explore our menu and order your next meal with just a few clicks.</p>
+        <a href="#menu" class="btn">Order Now</a>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="Images/burger.jpg" alt="Burger">
+                <h3>Cheeseburger</h3>
+                <p>$8.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="Images/pizza.jpg" alt="Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>$12.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="Images/sushi.jpg" alt="Sushi">
+                <h3>Sushi Platter</h3>
+                <p>$15.99</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form class="order-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="order-items">Your Order:</label>
+            <textarea id="order-items" name="order-items" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please call: ********* or email us at <a href="info@fastbite.com">info@fastbite.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 FastBite. All rights reserved.</p>
+    </footer>
+</body>
+</html>
